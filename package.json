@@ -1,7 +1,12 @@
 {
   "name": "react-quotes-slider",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "private": false,
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
@@ -25,11 +30,7 @@
       "react-app/jest"
     ]
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
+  
   "browserslist": {
     "production": [
       ">0.2%",
