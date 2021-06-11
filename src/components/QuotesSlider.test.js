@@ -1,7 +1,7 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-import QuotesSlider from "./QuotesSlider";
+import QuotesSlider from "./QuotesSliderImpl";
 
 
 let container = null;

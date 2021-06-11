@@ -3,7 +3,7 @@
 # Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Publishing to package manager was done using instructions [here](https://www.codementor.io/@peterodekwo/create-a-simple-react-npm-package-in-simple-steps-using-cra-w966okagi)
+Publishing to package manager was done using instructions [here](https://medium.com/@revanth0212/how-to-create-and-publish-react-components-using-the-create-react-app-9d60583c2161)
 
 
 ## To use this component

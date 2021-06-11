@@ -1,19 +1,62 @@
-import React from "react";
+"use strict";
 
-class Quote extends React.Component {
-  constructor(props) {
-    super(props);
-    this.quote = props.quote;
-    this.author = props.author;
-  }
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-  render() {
-    return /*#__PURE__*/React.createElement("div", {
-      key: Math.random(),
-      align: "center"
-    }, /*#__PURE__*/React.createElement("blockquote", null, /*#__PURE__*/React.createElement("p", null, this.quote), /*#__PURE__*/React.createElement("p", null, "-- ", this.author)));
-  }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-}
+var _react = require("react");
 
-export default Quote;
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Quote = function (_React$Component) {
+    _inherits(Quote, _React$Component);
+
+    function Quote(props) {
+        _classCallCheck(this, Quote);
+
+        var _this = _possibleConstructorReturn(this, (Quote.__proto__ || Object.getPrototypeOf(Quote)).call(this, props));
+
+        _this.quote = props.quote;
+        _this.author = props.author;
+        return _this;
+    }
+
+    _createClass(Quote, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { key: Math.random(), align: "center" },
+                _react2.default.createElement(
+                    "blockquote",
+                    null,
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        this.quote
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        "-- ",
+                        this.author
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Quote;
+}(_react2.default.Component);
+
+exports.default = Quote;

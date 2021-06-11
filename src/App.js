@@ -1,5 +1,5 @@
 import './App.css';
-import QuotesSlider from './QuotesSlider';
+import QuotesSlider from './components/index';
 
 function App() {
   return (

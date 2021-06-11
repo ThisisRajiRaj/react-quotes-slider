@@ -5,7 +5,7 @@ import Quote from "./Quote";
 import QuotesModel from "./QuotesModel";
 
 
-class QuotesSlider extends React.Component {
+class QuotesSliderImpl extends React.Component {
     constructor (props)
     {
         super(props);
@@ -34,7 +34,7 @@ class QuotesSlider extends React.Component {
             <Quote key={Math.random()} author={item.author} quote={item.quote} />
         ));
         if (itemList.length === 0)
-            return <></>;
+            return <div></div>;
         return (
             <div className="quoteSlider">
                 <Carousel 
@@ -53,4 +53,4 @@ class QuotesSlider extends React.Component {
     }
 }
 
-export default QuotesSlider;
+export default QuotesSliderImpl;

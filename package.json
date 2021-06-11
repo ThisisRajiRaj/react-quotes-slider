@@ -1,10 +1,20 @@
 {
   "name": "react-quotes-slider",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
+  "files": [
+    "dist/index.js",
+    "dist/Quote.js",
+    "dist/QuotesModel.js",
+    "dist/QuotesSlider.js"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "babel": {
     "presets": [
-      "@babel/preset-react"
+      "react",
+      "env",
+      "stage-2"
     ]
   },
   "dependencies": {
@@ -19,9 +29,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files",
+    "publish:build": "SET NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components --out-dir dist --copy-files",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,7 +40,6 @@
       "react-app/jest"
     ]
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -43,7 +52,6 @@
       "last 1 safari version"
     ]
   },
-  
   "author": "Raji Rajagopalan",
   "description": "A component to render a favorite quotes in a carousel.",
   "repository": "https://github.com/ThisisRajiRaj/react-quotes-slider",
@@ -54,7 +62,9 @@
   ],
   "license": "MIT License",
   "devDependencies": {
-    "@babel/cli": "^7.14.5",
-    "@babel/preset-react": "^7.14.5"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
