@@ -12,9 +12,9 @@ Publishing to package manager was done using instructions [here](https://www.cod
 
 ```jsx
 import React from "react";
-import BookShelf from "react-goodreads-simple";
+import QuotesSlider from "react-quotes-slider";
 
-export default function MyBookShelf() {
+export default function MyQuotesSlider() {
   return (
     <QuotesSlider
       interval=ANIMATION_INTERVAL_IN_MSECS
