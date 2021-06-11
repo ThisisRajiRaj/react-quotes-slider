@@ -1,6 +1,6 @@
 {
   "name": "react-quotes-slider",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
@@ -48,7 +48,7 @@
   "repository": "https://github.com/ThisisRajiRaj/react-quotes-slider",
   "keywords": [
     "quotes",
-    "carouse",
+    "carousel",
     "website"
   ],
   "license": "MIT License",
