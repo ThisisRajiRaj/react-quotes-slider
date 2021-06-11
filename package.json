@@ -1,12 +1,12 @@
 {
   "name": "react-quotes-slider",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "private": false,
   "files": [
     "dist/index.js",
     "dist/Quote.js",
     "dist/QuotesModel.js",
-    "dist/QuotesSlider.js"
+    "dist/QuotesSliderImpl.js"
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
