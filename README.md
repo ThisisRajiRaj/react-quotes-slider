@@ -27,6 +27,7 @@ export default function MyQuotesSlider() {
 quotesfileurl is a mandatory property. Default for interval is 5000.
 
 quotesfileurl is a json file in a publicly accessible location (http path). An example is below.
+```json
 [ 
     {
         "quote": "I can shake off everything as I write; my sorrows disappear, my courage is reborn.",
@@ -37,6 +38,32 @@ quotesfileurl is a json file in a publicly accessible location (http path). An e
         "author": "Simone Weil"
     }
 ]
+```
+
+To style the slider, update the following styles in your app similar to the example shown below:
+
+```
+.carousel .control-prev.control-arrow {
+  left: 0; }
+  .carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #000; }
+.carousel .control-next.control-arrow {
+  right: 0; }
+  .carousel .control-next.control-arrow:before {
+    border-left: 8px solid #000; }
+
+div.quoteSlider {  
+  background-color: #fff;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  border-style: solid;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  font-weight: bold;
+  color: black;
+}
+```
 
 ## Installing this component
 
